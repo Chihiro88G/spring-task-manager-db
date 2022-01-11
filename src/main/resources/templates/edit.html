@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Task Manager</title>
+</head>
+<body>
+    <header></header>
+    <div id="seihai">
+        <nav></nav>
+        <main>
+            <div class="title">✔️Things To Do</div>
+            <div id="date"></div>
+            <div class="inputList">
+                <form method="post" th:action="@{/save}">
+                    <input type="text" id="t1" class="text" name="text1" th:value="${text1}"> 
+                    <br>
+                    <input type="text" id="t2" class="text" name="text2" th:value="${text2}">
+                    <br>
+                    <input type="text" id="t3" class="text" name="text3" th:value="${text3}">
+                    <br>
+                    <input type="text" id="t4" class="text" name="text4" th:value="${text4}">
+                    <br>
+                    <input type="text" id="t5" class="text" name="text5" th:value="${text5}">
+                    <br>
+                    <input type="submit" name="save" value=" Save " class="saveButton">        
+                    <input type="button" name="reset" value="Reset" class="resetButton" onclick="pushResetButton()">
+                </form>
+            </div>    
+        </main>
+        <aside></aside>
+    </div>
+    <footer></footer>
+</body>
+</html>

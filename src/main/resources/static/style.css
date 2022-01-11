@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    text-align: center;
+    background-color: linen;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #404040;
+}  
+
+#seihai{
+    display: flex;
+}
+
+header{
+    height: 100px;
+}
+
+main{
+    flex: 1;
+    background-color: whitesmoke;
+}
+
+nav{
+    width: 300px;
+}
+
+aside{
+    width: 300px;
+}
+
+.title{
+    margin-bottom: 20px;
+    font-size: x-large;
+}
+
+.text {
+    margin-bottom: 20px;
+    height: 30px;
+    width: 300px;
+    font-size: 20px;
+    color: #404040;
+}
+
+.inputList{
+    margin-top: 30px;
+}
+
+.resetButton{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 7px;
+    color: #404040;
+    background-color: rgb(143, 238, 156);
+    border-radius: 8px;
+}
+
+.saveButton{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 7px;
+    color: #404040;
+    background-color: rgb(238, 143, 143);
+    border-radius: 8px;
+}
+
+.cbox {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 20px;
+}
+
+.multicheck {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .multicheck .multicheck-item {
+    margin: 5px 0;
+    padding: 0; }
+  .multicheck input[type="checkbox"] {
+    float: left;
+    transform: scale(1.5); 
+    cursor: pointer;}
+  .multicheck input[type="checkbox"].multicheck-input:checked + label {
+    background: #C0E8FF;
+    color: #333333;
+    border: 2px solid #28A7E1; }
+  .multicheck .multicheck-label {
+    display: block;
+    /* width: 100%; */
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    padding: 0 5px;
+    cursor: pointer;
+    color: #333333;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    background: #EEFECD;
+    transition: 0.5s; }
+  .multicheck .multicheck-label:hover {
+    background-color: #E2EDF9;
+    border: 2px solid #28A7E1; }
+
+.editButton{
+    float: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 7px;
+    color: #404040;
+    background-color: rgb(238, 143, 187);
+    border-radius: 8px;
+
+}
+

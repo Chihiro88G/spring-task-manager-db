@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Task Manager</title>
+  </head>
+  <body>
+    <header></header>
+    <div id="seihai">
+        <nav></nav>
+        <main>
+            <form method="post" th:action="@{/returnToEdit}">
+                    <div class="title">✔️Things To Do</div>
+                    <input type="submit" value=" Edit " name="editButton" class="editButton">           
+                    <div id="date"></div>
+                <div class="inputList">
+                    <ul class="multicheck">
+                        <li class="multicheck-item">
+                            <input type="checkbox" onchange="checkboxChecked(this)" id="c1" class="multicheck-input">
+                            <label id="colorchange1" th:text="${moji1}" class="multicheck-label"></label>
+                            <input type="hidden" name="moji1" th:value="${moji1}">
+                        </li>
+                        <br>
+                        <li class="multicheck-item">
+                            <input type="checkbox" onchange="checkboxChecked(this)" id="c2" class="multicheck-input">
+                            <label id="colorchange2" th:text="${moji2}" class="multicheck-label"></label>
+                            <input type="hidden" name="moji2" th:value="${moji2}">
+                        </li>
+                        <br>
+                        <li class="multicheck-item">
+                            <input type="checkbox" onchange="checkboxChecked(this)" id="c3" class="multicheck-input">
+                            <label id="colorchange3" th:text="${moji3}" class="multicheck-label"></label>
+                            <input type="hidden" name="moji3" th:value="${moji3}">
+                        </li>
+                        <br>
+                        <li class="multicheck-item">
+                            <input type="checkbox" onchange="checkboxChecked(this)" id="c4" class="multicheck-input">
+                            <label id="colorchange4" th:text="${moji4}" class="multicheck-label"></label>
+                            <input type="hidden" name="moji4" th:value="${moji4}">
+                        </li>
+                        <br>
+                        <li class="multicheck-item">
+                            <input type="checkbox" onchange="checkboxChecked(this)" id="c5" class="multicheck-input">
+                            <label id="colorchange5" th:text="${moji5}" class="multicheck-label"></label>
+                            <input type="hidden" name="moji5" th:value="${moji5}">
+                        </li>    
+                    </ul>
+                </form>
+            </div>    
+        </main>
+        <aside></aside>
+        </div>
+    <footer></footer> 
+  </body>
+</html>
